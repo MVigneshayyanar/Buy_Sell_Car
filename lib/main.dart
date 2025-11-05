@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:untitled/Direct Purchase Flow/details_price.dart';
 import 'package:untitled/Direct Purchase Flow/document_upload.dart';
 import 'package:untitled/Post-Purchase Handover/post_purchase.dart';
+import 'package:untitled/Works/peertopeer.dart';
+import 'package:untitled/Works/escrowpayment.dart';
+import 'package:untitled/Works/aitrustscore.dart';
+import 'package:untitled/Works/verifiedsellerpage.dart';
+import 'package:untitled/bookvisitpage/bookvisit_1.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -86,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const PostPurchaseHandoverScreen(),
+                    builder: (context) => const BookVisitFlow(),
                   ),
                 );
               },
